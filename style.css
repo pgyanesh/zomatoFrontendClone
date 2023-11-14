@@ -9,7 +9,7 @@
 .homePage{
     background: url(./Assets/heroSectionBackground.png);
     width: 100vw;
-    height: 70vh;
+    height: 65vh;
    background-repeat: no-repeat;
    background-size: cover;
  
@@ -80,7 +80,7 @@
 
 #zomatoLogo-img{
     width: 14vw;
-    height: 8vh;
+    height: 7vh;
 
 }
 @media (max-width:800px) {
@@ -131,4 +131,45 @@
         width: 56vw;
         height: 4vh;
     }
+}
+
+
+ /* CARD-SECTION */
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+    flex-direction: row;
+    margin-top: 4vh;
+}
+
+
+.card-innerSection{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8vw;
+
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.cards>img{
+    height: 20vh;
+    width: 15vw;
+    border-radius: 5px;
+}
+
+.cardHeading{
+    font-size: 18px;
+    font-weight: 500;
+}
+.cardPara{
+    font-size: 12px;
 }
