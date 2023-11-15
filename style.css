@@ -4,25 +4,28 @@
     font-family: 'Gabarito', sans-serif;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    
 }
+
 
 .homePage{
     background: url(./Assets/heroSectionBackground.png);
-    width: 100vw;
-    height: 65vh;
+    width: 99vw;
+    height: 72vh;
    background-repeat: no-repeat;
    background-size: cover;
- 
+   overflow: hidden;
    
 }
 .navbar{
     height: 9vh;
-    width: 100vw;
+    width: 99vw;
     background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    overflow: hidden;
+   
 }
 
 
@@ -32,7 +35,7 @@
     justify-content: flex-start;
     text-decoration: none;
     color: aliceblue;
-
+    font-size: 0.8rem;
 }
 
     
@@ -41,6 +44,7 @@
     justify-content: flex-end;
     gap: 4vw;
     width: 60vw;   
+    overflow: hidden;
 }
 
 .navbar-right > a{
@@ -71,17 +75,16 @@
    justify-content: center;
     margin-top: 12vh;
     color: antiquewhite;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 500;
-    gap: 2vh;
+    gap: 3vh;
     text-align: center;
 }
 
 
 #zomatoLogo-img{
-    width: 14vw;
-    height: 7vh;
-
+    width: 24vw;
+    height: 11vh;
 }
 @media (max-width:800px) {
     #zomatoLogo-img{
@@ -102,8 +105,8 @@
   
 }
 .placeholders1{
-    width: 8vw;
-    height: 5vh;
+    width: 13vw;
+    height: 8vh;
     padding: 25px 15px;
     border: none;
     outline: none;
@@ -113,8 +116,8 @@
 
 }
 .placeholders2{
-    width: 19vw;
-    height: 5vh;
+    width: 31vw;
+    height: 8vh;
     padding: 25px 15px;
     border: none;
     outline: none;
@@ -139,10 +142,11 @@
 .card-section{
     display: flex;
     justify-content: center;
-    height: 30vh;
-    width: 100vw;
+    height: 55vh;
+    width: 99vw;
     flex-direction: row;
-    margin-top: 4vh;
+    margin-top: 6vh;
+    overflow: hidden;
 }
 
 
@@ -150,26 +154,165 @@
     display: flex;
     flex-direction: row;
     gap: 0.8vw;
-
+    overflow: hidden;
+    height: 55vh;
 }
 .cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    border: 2px solid #e0e0e0;
+    padding-bottom: 2vh;
+    border-radius: 12px;
+    height:50vh;
+    
 }
 
 
-.cards>img{
-    height: 20vh;
-    width: 15vw;
-    border-radius: 5px;
+.cards-img{
+    height: 41vh;
+    width: 28vw;
+    border-top-left-radius: 12px;
+    border-top-right-radius:12px  ;
 }
 
 .cardHeading{
     font-size: 18px;
     font-weight: 500;
+    padding-left: 1vh;
 }
 .cardPara{
     font-size: 12px;
+    padding-left: 1vh;
+}
+
+
+/* Collections */
+
+.collection-section{
+    display: flex;
+    height:75vh;
+    width: 99vw;
+    flex-direction: column;
+    margin-top: 4vh;
+    align-items: center;
+    overflow: hidden;
+}
+.collections-headings{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.collectionsHeadings-left{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 64vw;
+    margin-left: 5vw;
+
+}
+#collectionHead-left{
+    font-size: 2.4rem;
+    font-weight: 400;
+
+}
+
+#collectionPara-left{
+    font-weight: 100;
+    font-size: 0.6em;
+}
+.collectionsHeadings-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 20vw;
+    margin-right: 5vw;
+    color:rgb(231, 66, 83);
+    display: flex;
+    align-items: center;
+}
+.collections{
+    display: flex;
+    width: 84vw;
+    gap: 1vw;
+    margin-top: 2vh;
+
+}
+.collection-cards{
+    position: relative;
+}
+.collections-image{
+    height: 53vh;
+    width: 21vw;
+    border-radius: 15px;
+    
+    top: 0;
+    left: 0;
+}
+
+.collection-Para1{
+    font-size: 1.1rem;
+    position: absolute;
+    top: 311px;
+    left: 9px;
+    color: aliceblue;
+}
+.collection-Para2{
+    font-size: 0.8rem;
+    position: absolute;
+    top: 342px;
+    left: 11px;
+    color: aliceblue;
+}
+
+/* signingup-section */
+
+.signingup-section{
+   height: 100vh;
+    width: 99.6vw;
+    display: flex;
+    margin-top: 5vh;
+}
+
+.signup-Left{
+    width: 49vw;
+    height:70vh ;
+    display: flex;
+    justify-content: flex-end;
+}
+.signup-Left>img{
+    width: 26vw;
+    height: 52vh;
+}
+
+.signup-Right{
+    height:70vh;
+    width: 50vw;
+}
+#signup-gettheApp{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 3vh 0;
+}
+
+#signup-sendtheLink{
+    font-size: 0.9rem;
+    padding-bottom:2vh ;
+}
+.signup-checkbox{
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 10vw;
+    display: flex;
+    padding: 3vh 0;
+    
+}
+.checkboxes{
+    padding: 0 0.8vw;
+}
+#email-box{
+    width: 23vw;
+    height: 8vh;
+    border-radius: 5%;
+    border: 1px solid #e0e0e0;
 }

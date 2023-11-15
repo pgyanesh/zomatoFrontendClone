@@ -11,7 +11,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <div>
+    <div class="Page">
    <div class="homePage">
     <div class="navbar">
         <div>
@@ -22,12 +22,12 @@
             <a href="/">Add resturant</a>
             <a href="/">Login</a>
             <a href="/">Signup</a>
-            <a id="user-logo" href="/" ><i class="fa-solid fa-user"></i></a>
+            <!-- <a id="user-logo" href="/" ><i class="fa-solid fa-user"></i></a> -->
         </div>
     </div>
     <div class="zomatoLogo">
         <img id="zomatoLogo-img" src="/Assets/heroSectionLogo.png"/>
-        <p>Find the best restaurants, cafés and bars in Mysuru</p>
+        <p>Discover the best restaurants, cafés and bars in Mysuru</p>
     </div>
     <div class="zomatoPlaceholders">
         <input class="placeholders1" type="text" placeholder="Mysuru"/>
@@ -41,27 +41,88 @@
    <section class="card-section" >
    <div class="card-innerSection">
         <div class="cards">
-            <img src="/Assets/item1.png" alt="error" />
+            <img class="cards-img" src="/Assets/item1.png" alt="error" />
             <p class="cardHeading">Order online</p>
             <p class="cardPara">Stay home and order at your doorstep</p>
         </div>
         <div class="cards">
-            <img src="/Assets/item2.png" alt="error" />
+            <img class="cards-img" src="/Assets/item2.png" alt="error" />
             <p class="cardHeading">Dining</p>
             <p class="cardPara">View the cities favourite dining venues</p>
         </div>
         <div class="cards">
-            <img src="/Assets/item3.png" alt="error" />
+            <img class="cards-img" src="/Assets/item3.png" alt="error" />
             <p class="cardHeading">Nightlife and Clubs</p>
             <p class="cardPara">Explore the city's top nightlife outlets</p>
         </div>
-        <div class="cards">
+        <!-- <div class="cards">
             <img src="/Assets/item4.png" alt="error" />
             <p class="cardHeading">Order online</p>
             <p class="cardPara">Stay home and order at your doorstep</p>
-        </div>
+        </div> -->
    </div>
 </section>
+
+<!-- COLLECTIONS -->
+
+<section class="collection-section">
+    <div class="collections-headings">
+        <div class="collectionsHeadings-left">
+            <p id="collectionHead-left">Collections</p>
+            <p id="collectionpara-left">Explore curated lists of top restaurants, cafes and pubs in Mysuru based on trends</p>
+        </div>
+        <div class="collectionsHeadings-right">
+            <p>All collections in Mysuru</p>
+        </div>
+    </div>
+    <div class="collections">
+        <div class="collection-cards">
+            <img class="collections-image" src="/Assets/collection1.jpg" alt="error"/>
+            <p class="collection-Para1">Live cricket screening</p>
+            <p class="collection-Para2">10 Places</p>
+        </div>
+        <div class="collection-cards">
+            <img class="collections-image" src="/Assets/collection2.jpg" alt="error"/>
+            <p class="collection-Para1">Today's special</p>
+            <p class="collection-Para2">12 Places</p>
+        </div>
+        <div class="collection-cards">
+            <img class="collections-image" src="/Assets/collection3.jpg" alt="error"/>
+            <p class="collection-Para1">Trending pubs and clubs</p>
+            <p class="collection-Para2">20 Places</p>
+        </div>
+        <div class="collection-cards">
+            <img class="collections-image" src="/Assets/collection4.jpg" alt="error"/>
+            <p class="collection-Para1">Newly opened resturants</p>
+            <p class="collection-Para2">14 places</p>
+        </div>
+    </div>
+</section>
+    <div class="signingup-section">
+        <div class="signup-Left">
+            <img src="/Assets/mobileBanner.png" alt="error"/>
+
+        </div>
+        <div class="signup-Right">
+            <p>Get the Zomato App</p>
+            <p>We will send you a link, open it on your phone to download</p>
+            <div class="signup-checkbox">
+                <input type="radio"/><span>Email</span>
+                <input type="radio"/><span>Phone</span>
+            </div>
+            <div class="signup-Placeholder"> 
+                <input type="text" placeholder="Enter here"/>
+                <button>Share app Link</button>
+            </div>
+            <p>Download app from</p>
+            <div class="signupEnd-img">
+                <img src="/Assets/appleStore.png" alt="error"/>
+                <img src="/Assets/playStore.png" alt="error" />
+            </div>
+        </div>
+    </div>
+
+
 </div>
 </body>
 </html>
