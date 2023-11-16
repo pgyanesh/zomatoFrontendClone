@@ -279,10 +279,12 @@
     height:70vh ;
     display: flex;
     justify-content: flex-end;
+    margin-right: 2vw;
+    padding-top: 3vh;
 }
 .signup-Left>img{
-    width: 26vw;
-    height: 52vh;
+    width: 20vw;
+    height: 43vh;
 }
 
 .signup-Right{
@@ -290,7 +292,7 @@
     width: 50vw;
 }
 #signup-gettheApp{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     padding: 3vh 0;
 }
@@ -298,21 +300,42 @@
 #signup-sendtheLink{
     font-size: 0.9rem;
     padding-bottom:2vh ;
+    color: rgb(95, 93, 93);
 }
 .signup-checkbox{
-    font-size: 1.2rem;
     font-weight: 100;
-    width: 10vw;
+    width: 18vw;
     display: flex;
     padding: 3vh 0;
+    gap: 0.7vw;
+   
     
 }
-.checkboxes{
-    padding: 0 0.8vw;
-}
+
 #email-box{
     width: 23vw;
     height: 8vh;
-    border-radius: 5%;
+    border-radius:11px;
     border: 1px solid #e0e0e0;
+    margin-bottom: 3vh;
+}
+#email{
+    width: 15px;
+}
+#phone{
+    width: 15px;
+}
+
+#email:checked{
+    background-color: red;
+}
+.signup-button{
+    width: 13vw;
+    height: 6.5vh;
+    padding: 1vh 1vw;
+    background-color:#ef4f5f;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
 }

@@ -104,14 +104,16 @@
 
         </div>
         <div class="signup-Right">
-            <p>Get the Zomato App</p>
-            <p>We will send you a link, open it on your phone to download</p>
+            <p id="signup-gettheApp">Get the Zomato App</p>
+            <p id="signup-sendtheLink">We will send you a link, open it on your phone to download</p>
             <div class="signup-checkbox">
-                <input type="radio"/><span>Email</span>
-                <input type="radio"/><span>Phone</span>
+                <input type="radio" id="email" name="signup-radio"/>
+                <label for="email" style="font-size: 19px;">Email</label>
+                <input type="radio" id="phone" name="signup-radio"/>
+                <label for="phone" style="font-size: 19px;">Phone</label>
             </div>
             <div class="signup-Placeholder"> 
-                <input type="text" placeholder="Enter here"/>
+                <input id="email-box" type="text" placeholder="Enter here"/>
                 <button>Share app Link</button>
             </div>
             <p>Download app from</p>
