@@ -56,7 +56,10 @@
     border-radius: 50%;
     /* border: 2px solid white; */
 }
-@media (max-width:800px) {
+@media (max-width:900px) {
+    .homePage{
+        width: 100%;
+    }
     .navbar{
         font-size: 10px;
        
@@ -86,13 +89,13 @@
     width: 24vw;
     height: 11vh;
 }
-@media (max-width:800px) {
+@media (max-width:900px) {
     #zomatoLogo-img{
-        width: 38vw;
-        height: 6vh;
+        width: 92vw;
+        height: 14vh;
     }
     .zomatoLogo{
-        font-size: 1rem;
+        font-size: 0.68rem;
     }
 }
 .zomatoPlaceholders{
@@ -124,7 +127,7 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-@media (max-width:800px) {
+@media (max-width:900px) {
     .placeholders1{
         width: 28vw;
         height: 4vh;
@@ -133,6 +136,7 @@
     .placeholders2{
         width: 56vw;
         height: 4vh;
+       
     }
 }
 
@@ -187,6 +191,29 @@
     padding-left: 1vh;
 }
 
+@media (max-width:900px) {
+    .card-section{
+        height: 82vh;
+        width: 100%;
+    }
+    .card-innerSection{
+        height: 82vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards{
+        height: 40vh;
+        width: 42vw;
+        margin-right: 3vw;
+    }
+    .cards-img{
+        width: 42vw;
+        height:27vh ;
+    }
+}
 
 /* Collections */
 
@@ -213,13 +240,13 @@
     margin-left: 5vw;
 
 }
-#collectionHead-left{
+.collectionHead-left{
     font-size: 2.4rem;
     font-weight: 400;
 
 }
 
-#collectionPara-left{
+.collectionpara-left{
     font-weight: 100;
     font-size: 0.6em;
 }
@@ -266,6 +293,59 @@
     color: aliceblue;
 }
 
+@media (max-width:900px) {
+    .collection-section{
+        height: 140vh;
+    }
+    .collections-headings{
+        width: 90%;
+        display:flex;
+        justify-content: flex-start;
+    }
+    .collectionsHeadings-left{
+        width: 85%;
+    }
+    .collectionHead-left{
+        font-size: 1rem;
+        
+        
+    }
+    .collectionpara-left{
+      font-size: 0.7rem;
+    }
+    .collectionsHeadings-right{
+        display: none;
+    }
+    .collections{
+        height: 140vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+        width: 100%;
+        justify-content: center;
+    }
+    .collection-cards{
+        width: 43vw;
+
+    }
+    .collections-image{
+        width: 43vw;
+    }
+    .collection-Para1{
+        font-size: 0.8rem;
+        position: absolute;
+        top: 267px;
+        left: 7px;
+        
+    }
+    .collection-Para2{
+        font-size: 0.7rem;
+        position: absolute;
+        top:317px;
+        left: 9px ;
+    }
+}
+
 /* signingup-section */
 
 .signingup-section{
@@ -292,13 +372,13 @@
     height:70vh;
     width: 50vw;
 }
-#signup-gettheApp{
+.signup-gettheApp{
     font-size: 2.5rem;
     font-weight: 500;
     padding: 3vh 0;
 }
 
-#signup-sendtheLink{
+.signup-sendtheLink{
     font-size: 0.9rem;
     padding-bottom:2vh ;
     color: rgb(95, 93, 93);
@@ -313,7 +393,7 @@
     
 }
 
-#email-box{
+.email-box{
     width: 23vw;
     height: 8vh;
     border-radius:11px;
@@ -359,6 +439,54 @@
     cursor: pointer;
 }
 
+@media (max-width:900px) {
+    .signup-Left{
+        display: none;
+    }
+
+    .signup-Right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .signup-gettheApp{
+        font-size: 1.8rem;
+    }
+    .signup-sendtheLink{
+       font-size: 0.9rem;
+       padding-left: 15px;
+    }
+    .signup-checkbox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 4vw;
+    }
+    .signup-Placeholder{
+        width: 90%;
+    }
+    .email-box{
+        width: 55vw;
+    }
+    .signup-button{
+        width: 24vw;
+    }
+    .signupEnd-img{
+        display: flex;
+        height: 11vh;
+        width: 64vw;
+        gap: 2vw;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .signupEnd-img img{
+        height: 8vh;
+        width: 38vw;
+    }
+}
 
 
 /* footer-section */
@@ -407,6 +535,17 @@
 .footerInnerDrops:hover{
     cursor: pointer;
 }
+@media (max-width:900px) {
+    .footerSection-heading{
+        font-size: 1.4rem;
+        letter-spacing: 0.8px;
+    }
+    .footerInnerDrops{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
 
 /* finalSection */
 
@@ -415,7 +554,7 @@
     width: 99.5vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 
 .finalSection-heading{
@@ -453,15 +592,17 @@
 }
 
 .finalSection-content{
-    width: 70vw;
+    width: 90vw;
     display: flex;
+    margin-top: 4vh;
+    margin-left: 7vw;
 }
 .finalSection-content1{
     width: 18vw;
 
 }
 .finalSection-content2{
-    width: 18vw;
+    width: 14vw;
 
 }
 .finalSection-content3{
@@ -476,9 +617,59 @@
     width: 18vw;
 
 }
+.dark-head{
+    font-weight: 450;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+    margin-bottom: 1vh;
+}
 .final-lists{
     list-style: none;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: grey;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
+    font-weight: 150;
+}
+@media (max-width:900px) {
+    .finalSection-headingLeft{
+        width: 100%;
+        display: block;
+    }
+    .finalSection-headingLeft img {
+        width: 36vw;
+        height: 6vh;
+    }
+    .finalSection-headingRight{
+        display: none;
+    }
+    .finalSection-content{
+        height: 100vh;
+        width: 100%;
+        margin: 1vh 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .finalSection-content1{
+        width: 53vw;
+        height: 42vh;
+        font-size: 0.5rem;
+    }
+    .finalSection-content2{
+        width: 53vw;
+        height: 42vh;
+    }
+    .finalSection-content3{
+        width: 53vw;
+        height: 42vh;
+    }
+    .finalSection-content4{
+        width: 53vw;
+        height: 42vh;
+    }
+    .finalSection-content5{
+        width: 53vw;
+        height: 42vh;
+    }
+
 }
